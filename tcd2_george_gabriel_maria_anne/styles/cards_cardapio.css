@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+.mcd-category__title--main {
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+@media only screen and (min-width: 1024px) {
+  .mcd-category__title--main {
+    margin-bottom: 50px;
+  }
+}
+
+.mcd-category-detail {
+  text-align: center;
+}
+
+.colum_menu {
+  display: flex;
+  height: 239px;
+  width: 100%;
+  flex-shrink: 0;
+  background: #f3ebdb;
+}
+
+footer {
+  width: 100%;
+  height: 383px;
+  background: #522414;
+  padding-top: 50px /* Ajuste a quantidade de espaço superior conforme necessário */
+}
+
+.line {
+  height: 1px;
+  background: #fff;
+  text-align: center;
+  margin-left: 210px;
+  margin-right: 210px;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 15px;
+}
+
+.card {
+  width: calc(28% - 30px);
+  height: 254px;
+  margin: 15px 0;
+  background: #f3ebdb;
+  box-sizing: border-box;
+  border: 1px solid #f3ebdb;
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 20px;
+  position: relative;
+}
+
+.card .icon img {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.fundo {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: white;
+  z-index: 1;
+}
+
+.card:nth-child(1n + 4) {
+  margin-right: 0;
+  margin-top: 15px;
+}
+
+.link.paginicial {
+  font-size: 24px;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.5s ease-in-out;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.link.paginicial::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.link.paginicial:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+footer h2{
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+footer h3{
+  color: #fff;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.fundo h2 {
+  color: rgb(80, 35, 20);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.fundo h3 {
+  color: rgb(80, 35, 20);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+img {
+  width: 44.863px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.social {
+  text-align: center;
+}
+
+element.style {
+  color: rgb(245, 235, 220);
+  --bg-color-scroll-top: #d62300;
+}
+
+#button-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #d62300;
+  color: #f5ebdc;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  outline: none;
+}
+
+#button-to-top:hover {
+  background-color: #b31a00;
+}
+
+#button-to-top::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+#button-to-top .arrow {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../admin/images/arrow_up.png);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 40px;
+  width: 20px;
+  height: 20px;
+  transform-origin: center bottom;
+  transition: transform 0.2s, background-color 0.8s; 
+}
+
+#button-to-top::before {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+  opacity: 5;
+  transition: transform 0.8s ease; 
+}
+
+#button-to-top:hover .arrow {
+  animation: jump 1s infinite;
+  background-color: #d62300;
+}
+
+@keyframes jump {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translate(-50%, -50%);
+  }
+  40% {
+    transform: translate(-50%, -80%);
+  }
+  60% {
+    transform: translate(-50%, -60%);
+  }
+}

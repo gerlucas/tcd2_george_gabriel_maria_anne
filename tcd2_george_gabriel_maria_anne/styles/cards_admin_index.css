@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+section.cards {
+  display: flex;
+  padding: 32px;
+}
+
+section.cards section.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  max-height: 468px;
+  margin-left: 32px;
+}
+
+section.cards section.card:first-child {
+  margin-left: 0;
+}
+
+section.cards section.card .icon {
+  width: 64px;
+  height: 64px;
+  font-size: 32px;
+}
+
+section.cards section.card img {
+  width: 100%;
+}
+
+section.cards section.card h3 {
+  font-size: 100%;
+  margin: 16px 0;
+}
+
+section.cards section.card span {
+  font-weight: 300;
+  max-width: 240px;
+  font-size: 80%;
+  margin-bottom: 16px;
+}
+
+section.cards section.card button {
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  border-radius: 32px;
+  border: 0;
+  cursor: pointer;
+  font-size: 80%;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 16px 0;
+}
+
+section.cards section.card.primario button {
+  background: linear-gradient(to right, #9f66ff, #dfcbff);
+}
+
+section.cards section.card.secundario button {
+  background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+
+section.cards section.card.terciario button {
+  background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+}
+
+section.cards section.card.primario {
+  box-shadow: 20px 20px 50px -30px #dbc4ff;
+}
+
+section.cards section.card.secundario {
+  box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+
+section.cards section.card.terciario {
+  box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+@media screen and (max-width: 720px) {
+  section.cards {
+    flex-direction: column;
+  }
+
+  section.cards section.card {
+    margin-left: 0;
+    margin-bottom: 32px;
+  }
+
+  section.cards section.card:last-child {
+    margin-bottom: 0;
+  }
+
+  section.cards section.card button {
+    font-size: 70%;
+  }
+}
